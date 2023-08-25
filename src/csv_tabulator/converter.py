@@ -7,7 +7,6 @@ Author(s):
 
 
 
-import argparse
 import pandas as pd
 import re
 import sys
@@ -75,20 +74,11 @@ def csv_to_html(csv_file_path, html_output_path):
   write_table(file, html_output_path)
   print('Done...!')
 
-def convert():
-  args = read_args()
-  csv_file_path = args.csv_file
-  html_output_path = args.html_file
+def convert(csv_file, output_html):
+  csv_file_path = csv_file
+  html_output_path = output_html
   csv_to_html(csv_file_path, html_output_path)
 
-def read_args():
-  '''method to read arguments'''
-  parser = argparse.ArgumentParser(description="Convert CSV to HTML table")
-  parser.add_argument("--csv-file", required=True, help="Path to input CSV file")
-  parser.add_argument("--html-file", required=True, help="Path to output HTML file")
-
-  return parser.parse_args()
-
 if __name__ == "__main__":
-    main()
+  convert('csv_file', 'output.html')
 
