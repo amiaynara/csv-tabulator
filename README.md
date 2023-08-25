@@ -8,4 +8,14 @@ You can install the package using `pip`:
 
 ```bash
 pip install csv-tabulator
+```
 
+## Usage
+```bash
+>>> from csv_tabulator import converter
+>>> converter.convert('/Users/amiaynarayan/Projects/utilities/tabulator/tests/csv_file', 'table.html')
+File Reading... Done!
+Converting to HTML...
+Writing the HTML file to table.html
+Done...!
+```

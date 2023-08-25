@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "csv_tabulator"
-version = "0.0.3"
+version = "1.0.1"
 authors = [
   { name="Amiay Narayan", email="amiay.narayan@gmail.com" },
 ]

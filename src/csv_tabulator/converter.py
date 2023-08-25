@@ -68,7 +68,7 @@ def read_file(csv_file_path):
   print('File Reading... Done!')
   return data
 
-def csv_to_html(csv_file_path, html_output_path):
+def csv_to_html(csv_file_path, html_output_path='table.html'):
   data = read_file(csv_file_path)
   file = create_table(data)
   write_table(file, html_output_path)
