@@ -75,7 +75,7 @@ def csv_to_html(csv_file_path, html_output_path):
   write_table(file, html_output_path)
   print('Done...!')
 
-def main():
+def convert():
   args = read_args()
   csv_file_path = args.csv_file
   html_output_path = args.html_file
