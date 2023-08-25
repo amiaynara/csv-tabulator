@@ -3,8 +3,8 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "csv-tabulator"
-version = "0.0.2"
+name = "csv_tabulator"
+version = "0.0.3"
 authors = [
   { name="Amiay Narayan", email="amiay.narayan@gmail.com" },
 ]
